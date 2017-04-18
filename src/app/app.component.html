@@ -1,0 +1,34 @@
+<h1>Conta</h1>
+
+<div>
+    <h2>Minhas contas</h2>
+
+
+    <contas-listar>
+    </contas-listar>
+
+    <div>
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" value="" #titulo>
+        </div>
+
+        <div>
+            <label for="descricao">descricao</label>
+            <input type="text" id="descricao" name="descricao" value="" #descricao>
+        </div>
+
+        <div>
+            <label for="total">total</label>
+            <input type="number" id="total" name="total" value="" #total>
+        </div>
+
+        <div>
+            <button (click)="criarConta(titulo,descricao,total)">Criar</button>
+        </div>
+    </div>
+
+
+    
+    
+</div>

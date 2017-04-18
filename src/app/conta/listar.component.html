@@ -1,0 +1,12 @@
+<div class="info" *ngIf=" _contas.length == 0">Não possuo nenhuma conta. Tenho que adicionar uma</div>
+
+<div class="acc" [ngClass]="{selected:_selected[i.id]}" *ngFor="let acc of _contas, let i of index">
+    <h3 class="titulo">{{acc.titulo}} ({{acc.id}})</h3>
+    <p>{{acc.descricao}}</p>
+    <p>Total em acc: <strong>{{acc.total}}</strong> </p>
+    <button (click)="removerConta(i.id-1)">Remover</button>
+    <button (click)="select(i.id)">
+        {{_selected[i.id] ? 'Deselecionar' : 'Selecionar'}}
+        
+    </button>
+</div>
